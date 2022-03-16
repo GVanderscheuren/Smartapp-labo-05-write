@@ -9,6 +9,7 @@ import Settings from '../Settings';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../styles/colors';
 import { ComponentProps } from 'react';
+import core from '../../styles/core';
 
 const Tab = createBottomTabNavigator();
 
@@ -49,14 +50,12 @@ const screenOptions = ({
 
   headerStyle: {
     backgroundColor: colors.dark,
-    
   },
 
   headerTitleAlign: 'center',
 
   headerTitleStyle: {
     color: colors.light,
-    
   },
 });
 

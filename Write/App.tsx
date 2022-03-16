@@ -31,7 +31,8 @@ export default function App() {
     return (
       <NavigationContainer>
         <SafeAreaProvider>
-          <StatusBar style="auto" />
+          <StatusBar style="inverted" />
+
           <AppNavigation />
         </SafeAreaProvider>
       </NavigationContainer>
