@@ -41,4 +41,8 @@ export default StyleSheet.create({
   rounded: {
     borderRadius: 16,
   },
+
+  textPlayFair: {
+    // fontFamily: PlayfairDisplay_400Regular;
+  }
 });

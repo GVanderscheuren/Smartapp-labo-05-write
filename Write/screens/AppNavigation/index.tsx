@@ -1,4 +1,5 @@
 import {
+  BottomTabHeaderProps,
   BottomTabNavigationOptions,
   createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs';
@@ -10,6 +11,7 @@ import { Ionicons } from '@expo/vector-icons';
 import colors from '../../styles/colors';
 import { ComponentProps } from 'react';
 import core from '../../styles/core';
+import NavigationHeader from '../../components/NavigationHeader';
 
 const Tab = createBottomTabNavigator();
 
@@ -56,6 +58,13 @@ const screenOptions = ({
 
   headerTitleStyle: {
     color: colors.light,
+  },
+
+  header: (props: BottomTabHeaderProps) => {
+    console.log(props);
+    const title: string = props.route.name;
+    const { params } = props.route.params;
+    return <NavigationHeader title={title} params />;
   },
 });
 

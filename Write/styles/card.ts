@@ -34,4 +34,8 @@ export default StyleSheet.create({
   cardAmountOfPages: {
     color: colors.grey[100],
   },
+  
+  cardFullScreen: {
+
+  }
 });
